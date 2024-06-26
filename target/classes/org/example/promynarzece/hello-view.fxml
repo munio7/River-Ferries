@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="514.0" prefWidth="1014.0" style="-fx-background-color: LIGHTSKYBLUE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.promynarzece.Controller">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <Box depth="100" height="100" layoutX="96.0" layoutY="259.0" width="100" />
+   <Box depth="100" height="100" layoutX="49.0" layoutY="309.0" width="100" />
+   <Box depth="100" height="100" layoutX="49.0" layoutY="209.0" width="100" />
+   <Box depth="100" height="100" layoutX="82.0" layoutY="227.0" width="100" />
+   <Box depth="100" height="100" layoutX="82.0" layoutY="289.0" width="100" />
+   <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maciej Wrotniak WCY22IY4S1">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="5.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projekt Zaliczeniowy">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Button fx:id="endButton" layoutX="695.0" layoutY="452.0" mnemonicParsing="false" onAction="#end" prefHeight="47.0" prefWidth="74.0" text="Koniec" />
+   <Button fx:id="startButton" layoutX="893.0" layoutY="452.0" mnemonicParsing="false" onAction="#start" prefHeight="47.0" prefWidth="74.0" text="Start" />
+   <Box depth="100" height="100" layoutX="917.0" layoutY="259.0" width="100" />
+   <Box depth="100" height="100" layoutX="964.0" layoutY="309.0" width="100" />
+   <Box depth="100" height="100" layoutX="964.0" layoutY="209.0" width="100" />
+   <Box depth="100" height="100" layoutX="930.0" layoutY="227.0" width="100" />
+   <Box depth="100" height="100" layoutX="930.0" layoutY="289.0" width="100" />
+   <Text layoutX="3.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ilość aut">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="930.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ilość aut">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="42.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zmień prędkość statków" wrappingWidth="180.6603240966797">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Button fx:id="fasterButton" layoutX="182.0" layoutY="475.0" mnemonicParsing="false" onAction="#faster" text="Szybciej" />
+   <Button fx:id="slowerButton" layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#slower" text="Wolniej" />
+   <Button fx:id="stopButton" disable="true" layoutX="796.0" layoutY="452.0" mnemonicParsing="false" onAction="#stop" prefHeight="47.0" prefWidth="74.0" text="Stop" />
+   <Label fx:id="nCarsLeft" alignment="CENTER" layoutX="3.0" layoutY="122.0" prefHeight="25.0" prefWidth="46.0" style="-fx-border-color: Black;" text="0" />
+   <Label fx:id="nCarsRight" alignment="CENTER" layoutX="944.0" layoutY="122.0" prefHeight="25.0" prefWidth="46.0" style="-fx-border-color: Black;" text="0" />
+   <Button layoutX="93.0" layoutY="475.0" mnemonicParsing="false" onAction="#normal" text="Normalnie" />
+   <Label fx:id="timerLabelL" layoutX="241.0" layoutY="247.0" prefHeight="19.0" prefWidth="58.0" />
+   <Label fx:id="timerLabelR" layoutX="732.0" layoutY="247.0" prefHeight="19.0" prefWidth="58.0" />
+   <Text layoutX="497.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parametry symulacji:" wrappingWidth="145.86962890625">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="299.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ilość wątków">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="299.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pojemność portu">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Text layoutX="599.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czas oczekiwania statków">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Label fx:id="iloscWatkowLabel" alignment="CENTER" layoutX="449.0" layoutY="32.0" prefHeight="19.0" prefWidth="58.0" style="-fx-border-color: Red;" />
+   <Label fx:id="pojemnoscPortuLabel" alignment="CENTER" layoutX="449.0" layoutY="59.0" prefHeight="19.0" prefWidth="58.0" style="-fx-border-color: Red;" />
+   <Label fx:id="czasOczekiwaniaLabel" alignment="CENTER" layoutX="807.0" layoutY="32.0" prefHeight="19.0" prefWidth="58.0" style="-fx-border-color: Red;" />
+   <Text layoutX="599.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pojemność statków">
+      <font>
+         <Font name="Times New Roman" size="17.0" />
+      </font>
+   </Text>
+   <Label fx:id="pojemnoscStatkowLabel" alignment="CENTER" layoutX="807.0" layoutY="59.0" prefHeight="19.0" prefWidth="58.0" style="-fx-border-color: Red;" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="91.0" layoutX="283.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="597.0" />
+   <Button fx:id="changeParametersButton" layoutX="893.0" layoutY="11.0" mnemonicParsing="false" onAction="#ChangeParameters" prefHeight="47.0" prefWidth="108.0" text="Zmień parametry" />
+</AnchorPane>
